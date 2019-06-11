@@ -2,25 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-		<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bg {
-  /* The image used */
-  /*background-image: url("Capture.jpg");*/
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
+		
 	</head>	
 	<body>
 		<style type='text/css'>
@@ -43,7 +25,7 @@ body, html {
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+		//embedded_svc.settings.storageDomain = 'https://000webhostapp.com'; //(Sets the domain for your deployment so that visitors can //navigate subdomains during a chat session)
 
 		// Settings for Live Agent
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
@@ -58,10 +40,10 @@ body, html {
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://flixbus--VishalDev.cs102.my.salesforce.com',
-			'https://vishaldev-flixbus-partners.cs102.force.com/Chat',
+			'https://flixbus--VishalDev.cs100.my.salesforce.com',
+			'https://vishaldev-flixbus-partners.cs100.force.com/Chat',
 			gslbBaseURL,
-			'00D1j0000000XJ9',
+			'00D1x0000000MRu',
 			'Live_Agent_EN',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
@@ -76,7 +58,7 @@ body, html {
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://flixbus--VishalDev.cs102.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://flixbus--VishalDev.cs100.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -85,6 +67,5 @@ body, html {
 		initESW('https://service.force.com');
 	}
 </script>
-<div class="bg"></div>
 	</body>
 </html>
