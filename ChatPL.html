@@ -1,5 +1,5 @@
 <html>
-	<body>
+    <body>
         <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #FFAD00;
@@ -15,10 +15,10 @@
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
+		embedded_svc.settings.language = 'pl'; //For example, enter 'en' or 'en-US'
 
-		embedded_svc.settings.defaultMinimizedText = 'Chattez avec nous'; //(Defaults to Chat with an Expert)
-		embedded_svc.settings.disabledMinimizedText = 'Chat hors ligne'; //(Defaults to Agent Offline)
+		embedded_svc.settings.defaultMinimizedText = 'Czatuj z nami'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = 'Czat Offline'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
@@ -40,13 +40,13 @@
 			'https://uat-flixbus-partners.cs101.force.com/Chat',
 			gslbBaseURL,
 			'00D1X0000000Wp4',
-			'Live_Agent_FR',
+			'Live_Agent_PL',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
 				deploymentId: '5720O000000byvH',
-				buttonId: '5733X0000004GsT',
+				buttonId: '5733X0000004GsU',
 				baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3X000000CaUVUA0_16b2272af84',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3X000000CaUaUAK_16b2276fdda',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -63,5 +63,5 @@
 		initESW('https://service.force.com');
 	}
 </script>
-	</body>
+    </body>
 </html>
