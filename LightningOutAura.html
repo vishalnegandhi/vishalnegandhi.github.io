@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="https://uat-flixbus-partners.cs84.force.com/FlixHelp/lightning/lightning.out.js"></script>
+        <script>
+            $Lightning.use("c:ContactFormsApp",    // name of the Lightning app
+                function() {                  // Callback once framework and app loaded
+                    $Lightning.createComponent(
+                        "c:ContactFormsContainer", // top-level component of your app
+                        { },                  // attributes to set on the component when created
+                        "lightningLocator",   // the DOM location to insert the component
+                        function(cmp) {
+                            // callback when component is created and active on the page
+                            console.log(' --- in callbacl --- ');
+                        }
+                    );
+                },
+                'https://uat-flixbus-partners.cs84.force.com/FlixHelp'  // Community endpoint
+            );
+        </script>
+    </head>
+
+    <body>
+        <h3>LET US TEST LIGHTNING OUT FOR AURA COMPONENTS</h3>
+
+        <div id="lightningLocator">
+
+        </div>
+    </body>
+</html>
