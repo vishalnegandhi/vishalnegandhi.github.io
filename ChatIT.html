@@ -1,4 +1,5 @@
 <html>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <body>
         <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -8,16 +9,16 @@
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #FFAD00;
 	}
-    .embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = 'it'; //For example, enter 'en' or 'en-US'
-        embedded_svc.settings.defaultMinimizedText = 'Chatta con noi'; //(Defaults to Chat with an Expert)
-        embedded_svc.settings.disabledMinimizedText = 'Chatta Offline'; //(Defaults to Agent Offline)
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
@@ -35,17 +36,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://flixbus--UAT.cs101.my.salesforce.com',
-			'https://uat-flixbus-partners.cs101.force.com/Help',
+			'https://flixbus--pssp.my.salesforce.com',
+			'https://pssp-flixbus-partners.cs101.force.com/Chat',
 			gslbBaseURL,
-			'00D1X0000000Wp4',
-			'Live_Agent_Snap_in',
+			'00D1X0000001ooD',
+			'Live_Agent_LT',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la1-c1cs-cdg.salesforceliveagent.com/content',
 				deploymentId: '5720O000000byvH',
-				buttonId: '5730O000000bybD',
-				baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0O000000k9caUAA_1645b4774bf',
+				buttonId: '5733X0000004Xul',
+				baseLiveAgentURL: 'https://d.la1-c1cs-cdg.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3X000000Cn5LUAS_170bfd59b08',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -53,7 +54,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://flixbus--UAT.cs101.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://flixbus--pssp.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
